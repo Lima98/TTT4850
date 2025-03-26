@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load your dataset (replace 'your_file.csv' with actual filename)
-df = pd.read_csv("Readable_data .csv")
+df = pd.read_csv("Data/Readable_data .csv")
 
 # Compute overall statistics
 mean_all = df["Score"].mean()

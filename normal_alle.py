@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load your data (adjust the path as needed)
-df = pd.read_csv("Readable_data .csv")  # Or use sep="," if needed
+df = pd.read_csv("Data/Readable_data .csv")  # Or use sep="," if needed
 
 # Convert from long format to wide format
 df_wide = df.pivot(index="Subject no.", columns="Type", values="Score")

@@ -5,7 +5,7 @@ from scipy import stats
 from statsmodels.stats.multicomp import pairwise_tukeyhsd
 
 # Load dataset
-file_path = "Readable_data .csv"
+file_path = "Data/Readable_data .csv"
 df = pd.read_csv(file_path, delimiter=",")
 
 # Descriptive statistics

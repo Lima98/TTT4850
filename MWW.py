@@ -4,7 +4,7 @@ import pandas as pd
 import pingouin as pg
 
 # Load the dataset
-df = pd.read_csv("Readable_data .csv", sep=",")  # Ensure ',' is used after replacing ';'
+df = pd.read_csv("Data/Readable_data .csv", sep=",")  # Ensure ',' is used after replacing ';'
 
 # Convert to wide format (assuming Subject no. identifies subjects)
 df_wide = df.pivot(index="Subject no.", columns="Type", values="Score")

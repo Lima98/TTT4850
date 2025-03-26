@@ -3,7 +3,7 @@ import scipy.stats as stats
 import pandas as pd
 
 # Load your dataset
-df = pd.read_csv("Readable_data .csv")  # Ensure this matches your file location
+df = pd.read_csv("Data/Readable_data .csv")  # Ensure this matches your file location
 
 # Convert to wide format (each subject has one row)
 df_wide = df.pivot(index="Subject no.", columns="Type", values="Score")

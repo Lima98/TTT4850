@@ -6,7 +6,7 @@ import seaborn as sns
 import scipy.stats as stats
 
 # Load your dataset (replace 'your_file.csv' with actual filename)
-df = pd.read_csv("Readable_data .csv")
+df = pd.read_csv("Data/Readable_data .csv")
 
 ### OVERALL STATISTICS ###
 
@@ -121,7 +121,7 @@ else:
 print("======================================\n")
 
 ## Repeated Measures RM-ANOVA ##
-df = pd.read_csv("Readable_data .csv", delimiter=",")
+df = pd.read_csv("Data/Readable_data .csv", delimiter=",")
 
 # Reshape from long format to wide format
 df_wide = df.pivot(index="Subject no.", columns="Type", values="Score").reset_index()

@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load data
-df = pd.read_csv("Readable_data .csv")  # Adjust filename if needed
+df = pd.read_csv("Data/Readable_data .csv")  # Adjust filename if needed
 
 # Pivot to wide format
 df_wide = df.pivot(index="Subject no.", columns="Section no.", values="Score")
@@ -32,7 +32,7 @@ import pandas as pd
 import pingouin as pg
 
 # Load data
-df = pd.read_csv("Readable_data .csv")
+df = pd.read_csv("Data/Readable_data .csv")
 
 # Ensure columns are named correctly
 df.columns = df.columns.str.strip()  # Remove any accidental whitespace
